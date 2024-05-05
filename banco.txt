@@ -1,0 +1,157 @@
+CREATE ROLE admin WITH
+  LOGIN
+  SUPERUSER
+  INHERIT
+  CREATEDB
+  CREATEROLE
+  REPLICATION
+  ENCRYPTED PASSWORD 'md5d2c55023d6984130697a5f60af72a4c8';
+  
+ALTER USER admin PASSWORD '6e96c406d6008575611293c6388a713';
+
+-- Database: sistemaescolar
+
+-- DROP DATABASE IF EXISTS sistemaescolar;
+
+CREATE DATABASE sistemaescolar
+    WITH
+    OWNER = admin
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'en_US.utf8'
+    LC_CTYPE = 'en_US.utf8'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+    
+    
+-- Table: public.alunos
+
+-- DROP TABLE IF EXISTS public.alunos;
+
+CREATE TABLE IF NOT EXISTS public.alunos
+(
+    id text COLLATE pg_catalog."default" NOT NULL,
+    name text COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT alunos_pkey PRIMARY KEY (id),
+    CONSTRAINT alunos_id_name_key UNIQUE (id, name)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.alunos
+    OWNER to admin;
+    
+    
+    
+-- Table: public.disciplinas
+
+-- DROP TABLE IF EXISTS public.disciplinas;
+
+CREATE TABLE IF NOT EXISTS public.disciplinas
+(
+    id text COLLATE pg_catalog."default" NOT NULL,
+    name text COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT disciplina_pkey PRIMARY KEY (id)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.disciplinas
+    OWNER to admin;    
+    
+    
+
+-- Table: public.flyway_schema_history
+
+-- DROP TABLE IF EXISTS public.flyway_schema_history;
+
+CREATE TABLE IF NOT EXISTS public.flyway_schema_history
+(
+    installed_rank integer NOT NULL,
+    version character varying(50) COLLATE pg_catalog."default",
+    description character varying(200) COLLATE pg_catalog."default" NOT NULL,
+    type character varying(20) COLLATE pg_catalog."default" NOT NULL,
+    script character varying(1000) COLLATE pg_catalog."default" NOT NULL,
+    checksum integer,
+    installed_by character varying(100) COLLATE pg_catalog."default" NOT NULL,
+    installed_on timestamp without time zone NOT NULL DEFAULT now(),
+    execution_time integer NOT NULL,
+    success boolean NOT NULL,
+    CONSTRAINT flyway_schema_history_pk PRIMARY KEY (installed_rank)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.flyway_schema_history
+    OWNER to admin;
+-- Index: flyway_schema_history_s_idx
+
+-- DROP INDEX IF EXISTS public.flyway_schema_history_s_idx;
+
+CREATE INDEX IF NOT EXISTS flyway_schema_history_s_idx
+    ON public.flyway_schema_history USING btree
+    (success ASC NULLS LAST)
+    TABLESPACE pg_default;
+
+
+
+-- Table: public.nota
+
+-- DROP TABLE IF EXISTS public.nota;
+
+CREATE TABLE IF NOT EXISTS public.nota
+(
+    valor numeric(5,2) NOT NULL,
+    alunoid text COLLATE pg_catalog."default" NOT NULL,
+    disciplinaid text COLLATE pg_catalog."default" NOT NULL,
+    id text COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT nota_pkey PRIMARY KEY (id),
+    CONSTRAINT unique_nome UNIQUE (alunoid, disciplinaid),
+    CONSTRAINT nota_alunoid_fkey FOREIGN KEY (alunoid)
+        REFERENCES public.alunos (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT nota_disciplinaid_fkey FOREIGN KEY (disciplinaid)
+        REFERENCES public.disciplinas (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.nota
+    OWNER to admin;
+
+
+
+-- Table: public.users
+
+-- DROP TABLE IF EXISTS public.users;
+
+CREATE TABLE IF NOT EXISTS public.users
+(
+    id text COLLATE pg_catalog."default" NOT NULL,
+    login text COLLATE pg_catalog."default" NOT NULL,
+    password text COLLATE pg_catalog."default" NOT NULL,
+    role text COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT users_pkey PRIMARY KEY (id),
+    CONSTRAINT users_login_key UNIQUE (login)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.users
+    OWNER to admin;
+
+
+
