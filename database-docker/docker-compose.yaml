@@ -8,7 +8,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./database.sql:/docker-entrypoint-initdb.d/database.sql
       - ./postgres-data:/var/lib/postgresql/data
     networks:
       - postgres-compose-network
