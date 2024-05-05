@@ -10,4 +10,4 @@ FROM eclipse-temurin:17.0.11_9-jre-jammy
 RUN mkdir -p /app
 WORKDIR /app
 COPY --from=builder /tmp/src/app/target/sistema-escolar-1.0.jar sistema-escolar.jar
-CMD ["sh", "-c", "sleep 30 && java -jar sistema-escolar.jar"]
+CMD ["sh", "-c", "java -jar sistema-escolar.jar"]
