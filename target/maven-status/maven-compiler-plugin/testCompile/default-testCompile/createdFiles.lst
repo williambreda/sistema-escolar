@@ -1,2 +1,2 @@
-br/com/sistemaescolar/TempTest.class
-br/com/sistemaescolar/AlunoControllerTest.class
+br/com/sistemaescolar/tests/RegisterTest.class
+br/com/sistemaescolar/data/CsvEntryRegister.class

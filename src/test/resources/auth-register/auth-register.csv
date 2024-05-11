@@ -1,0 +1,4 @@
+nome,cenario,login,password,role,status,message
+criacao-usuario,ok,william,123,USER,200,,Usuário cadastrado com sucesso
+criacao-usuario-existente,nok,william,123,USER,403,,Usuário já existe no banco de dados
+role-invalida,nok,william,123,INVALIDO,403,,Role informada é invalida

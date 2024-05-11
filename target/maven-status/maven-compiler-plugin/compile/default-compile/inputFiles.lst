@@ -1,34 +1,34 @@
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/infra/security/SecurityConfigurations.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/controllers/DisciplinaController.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/domain/disciplina/DisciplinaRequestDTO.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/domain/disciplina/DisciplinaResponseDTO.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/domain/user/User.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/infra/security/SecurityFilter.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/domain/aluno/AlunoResponseDTO.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/controllers/NotaController.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/domain/aluno/AlunoRequestDTO.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/repositories/UserRepository.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/domain/nota/Nota.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/controllers/HistoricoController.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/infra/security/TokenService.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/domain/user/LoginResponseDTO.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/domain/historico/HistoricoRequestDTO.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/domain/historico/Historico.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/repositories/NotaRepository.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/repositories/HistoricoRepository.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/domain/user/RegisterDTO.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/domain/user/AuthenticationDTO.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/services/HistoricoService.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/domain/aluno/Aluno.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/domain/disciplina/Disciplina.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/services/AuthorizationService.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/repositories/DisciplinaRepository.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/controllers/AlunoController.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/SistemaEscolar.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/controllers/AuthenticationController.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/exceptions/Forbiden.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/domain/historico/HistoricoResponseDTO.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/domain/nota/NotaResponseDTO.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/repositories/AlunoRepository.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/domain/user/UserRole.java
-/home/wbreda/Documentos/ifrs/tcc/sistemas-distribuidos/Exercicio 3 - Sistema Escolar/src/main/java/br/com/sistemaescolar/domain/nota/NotaRequestDTO.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/domain/nota/Nota.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/domain/nota/NotaRequestDTO.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/repositories/UserRepository.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/domain/disciplina/DisciplinaResponseDTO.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/domain/disciplina/DisciplinaRequestDTO.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/domain/historico/Historico.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/domain/aluno/Aluno.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/controllers/DisciplinaController.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/domain/user/UserRole.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/infra/security/SecurityFilter.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/domain/aluno/AlunoResponseDTO.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/domain/user/AuthenticationDTO.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/controllers/NotaController.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/infra/security/SecurityConfigurations.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/domain/nota/NotaResponseDTO.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/controllers/AlunoController.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/infra/security/TokenService.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/exceptions/Forbiden.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/services/AuthorizationService.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/services/HistoricoService.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/domain/historico/HistoricoResponseDTO.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/controllers/AuthenticationController.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/repositories/HistoricoRepository.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/domain/disciplina/Disciplina.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/domain/user/LoginResponseDTO.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/domain/user/User.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/SistemaEscolar.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/repositories/DisciplinaRepository.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/repositories/NotaRepository.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/domain/aluno/AlunoRequestDTO.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/controllers/HistoricoController.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/domain/user/RegisterDTO.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/repositories/AlunoRepository.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/main/java/br/com/sistemaescolar/domain/historico/HistoricoRequestDTO.java

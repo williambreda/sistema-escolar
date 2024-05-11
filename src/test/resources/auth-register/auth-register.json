@@ -1,0 +1,12 @@
+{
+  "headers": [
+    "Content-Type","application/json"
+  ],
+
+  "queryParams": [],
+  "pathParams": [],
+  "baseUrl": "http://ec2-54-207-195-65.sa-east-1.compute.amazonaws.com:8080",
+  "body": "src/test/resources/topaz/auth-register/auth-register-body.json",
+  "requestMethod": "POST",
+  "endpoint": "/auth/register"
+}

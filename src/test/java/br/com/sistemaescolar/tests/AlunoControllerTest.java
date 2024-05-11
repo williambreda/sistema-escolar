@@ -1,11 +1,10 @@
-package br.com.sistemaescolar;
+package br.com.sistemaescolar.tests;
 
 import br.com.sistemaescolar.controllers.AlunoController;
 import br.com.sistemaescolar.domain.aluno.Aluno;
 import br.com.sistemaescolar.domain.aluno.AlunoRequestDTO;
 import br.com.sistemaescolar.domain.aluno.AlunoResponseDTO;
 import br.com.sistemaescolar.repositories.AlunoRepository;
-import jakarta.persistence.GenerationType;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
@@ -22,7 +21,7 @@ import static org.mockito.Mockito.*;
 public class AlunoControllerTest {
 
     @Test
-    @Tags({@Tag("aluno"),@Tag("todos"), @Tag("post")})
+    @Tags({@Tag("aluno"),@Tag("todos"), @Tag("unitarios")})
     @DisplayName("Teste da API: POST /aluno")
     public void testPostAluno() {
         AlunoRepository repository = mock(AlunoRepository.class);
@@ -34,7 +33,7 @@ public class AlunoControllerTest {
     }
 
     @Test
-    @Tags({@Tag("aluno"),@Tag("todos"), @Tag("get")})
+    @Tags({@Tag("aluno"),@Tag("todos"), @Tag("unitarios")})
     @DisplayName("Teste da API: GET /aluno")
     public void testGetTodosAlunos() {
         AlunoRepository repository = mock(AlunoRepository.class);
