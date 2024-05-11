@@ -11,7 +11,7 @@
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/williambreda/sistemas-distribuidos
+git clone https://github.com/williambreda/sistemas-escolar
 ```
 
 2. Instale as dependências com o Maven
@@ -33,3 +33,6 @@ Endpoints da aplicação podem ser encontrados abaixo:
 ```markdown
 http://localhost:8080/swagger-ui/index.html#/
 ```
+
+## Allure Reports
+https://williambreda.github.io/sistema-escolar/
