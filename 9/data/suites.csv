@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat May 11 22:20:02 GMT 2024","Sat May 11 22:20:02 GMT 2024","443","","Testes Cadastro de Usuários","","br.com.sistemaescolar.tests.RegisterTest","register","[2] criacao-usuario-existente, nok, william, 123, USER, 403, null, Usuário já existe no banco de dados",""
+"passed","Sat May 11 22:20:00 GMT 2024","Sat May 11 22:20:02 GMT 2024","1596","","Testes Cadastro de Usuários","","br.com.sistemaescolar.tests.RegisterTest","register","[1] criacao-usuario, ok, william, 123, USER, 200, null, Usuário cadastrado com sucesso",""
+"passed","Sat May 11 22:20:02 GMT 2024","Sat May 11 22:20:03 GMT 2024","252","","Testes Cadastro de Usuários","","br.com.sistemaescolar.tests.RegisterTest","register","[3] role-invalida, nok, william, 123, INVALIDO, 403, null, Role informada é invalida",""
