@@ -1,4 +1,5 @@
 /home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/test/java/br/com/sistemaescolar/tests/TempTest.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/test/java/br/com/sistemaescolar/tests/ParametrizedTest.java
 /home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/test/java/br/com/sistemaescolar/helpers/RequestHelpers.java
 /home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/test/java/br/com/sistemaescolar/data/CsvEntryRegister.java
 /home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/test/java/br/com/sistemaescolar/tests/RegisterTest.java

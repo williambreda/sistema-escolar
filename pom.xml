@@ -17,6 +17,8 @@
 		<java.version>17</java.version>
 		<base.url>http://localhost</base.url>
 		<allure.version>2.15.0</allure.version>
+		<sonar.host.url>http://localhost:9000</sonar.host.url>
+		<sonar.token>sqa_d84a6f28fd61c26f3c84f2e4e8985dcf01bbaa27</sonar.token>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -126,6 +128,27 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>com.epam.reportportal</groupId>
+			<artifactId>client-java</artifactId>
+			<version>4.0.12</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.epam.reportportal</groupId>
+			<artifactId>logger-java-log4j</artifactId>
+			<version>4.0.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.epam.reportportal</groupId>
+			<artifactId>agent-java-junit</artifactId>
+			<version>4.0.2</version>
+		</dependency>
+
+
+
+
 	</dependencies>
 
 	<build>
@@ -148,6 +171,12 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M5</version>
+			</plugin>
+
+			<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>3.11.0.3922</version>
 			</plugin>
 
 
