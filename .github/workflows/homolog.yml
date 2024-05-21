@@ -1,4 +1,4 @@
-name: Deploy Application AWS EC2
+name: Deploy Application Homolog AWS EC2
 
 on:
   push:
