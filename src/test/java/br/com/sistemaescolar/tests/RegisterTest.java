@@ -23,14 +23,14 @@ public class RegisterTest {
     @CsvFileSource(resources = "/auth-register/auth-register.csv", numLinesToSkip = 1)
     @DisplayName("Register Tests")
     void register(ArgumentsAccessor accessor) throws ExecutionException, InterruptedException {
-//        var csvEntry = csv.mapToCsvEntry(accessor);
-//        var pojo = buildPojo.apply("auth-register", csvEntry.getCenario().equalsIgnoreCase("ok")
-//                ?retornaUserDinamico.apply(csvEntry.getLogin())
-//                :csvEntry.getLogin(), csvEntry.getPassword(), csvEntry.getRole(), null);
-//
-//        var request = asyncRequest.apply(pojo);
-//
-//        Assertions.assertEquals(request.get().statusCode(), Integer.valueOf(csvEntry.getStatus()));
+        var csvEntry = csv.mapToCsvEntry(accessor);
+        var pojo = buildPojo.apply("auth-register", csvEntry.getCenario().equalsIgnoreCase("ok")
+                ?retornaUserDinamico.apply(csvEntry.getLogin())
+                :csvEntry.getLogin(), csvEntry.getPassword(), csvEntry.getRole(), null);
+
+        var request = asyncRequest.apply(pojo);
+
+        Assertions.assertEquals(request.get().statusCode(), Integer.valueOf(csvEntry.getStatus()));
 
         ReportPortal.emitLog("teste", "info", Calendar.getInstance().getTime());
 

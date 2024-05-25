@@ -1,2 +1,11 @@
 br/com/sistemaescolar/tests/RegisterTest.class
+br/com/sistemaescolar/data/CsvEntryLogin.class
+br/com/sistemaescolar/data/Api2POJO.class
+br/com/sistemaescolar/tests/TempTest.class
+br/com/sistemaescolar/tests/AlunoControllerTest.class
+br/com/sistemaescolar/helpers/TestUtils.class
+br/com/sistemaescolar/tests/LoginTest.class
+br/com/sistemaescolar/helpers/BuildHelpers.class
 br/com/sistemaescolar/data/CsvEntryRegister.class
+br/com/sistemaescolar/helpers/RequestHelpers$1.class
+br/com/sistemaescolar/helpers/RequestHelpers.class
