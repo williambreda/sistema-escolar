@@ -1,9 +1,10 @@
 /home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/test/java/br/com/sistemaescolar/tests/TempTest.java
-/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/test/java/br/com/sistemaescolar/tests/ParametrizedTest.java
 /home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/test/java/br/com/sistemaescolar/helpers/RequestHelpers.java
 /home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/test/java/br/com/sistemaescolar/data/CsvEntryRegister.java
 /home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/test/java/br/com/sistemaescolar/tests/RegisterTest.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/test/java/br/com/sistemaescolar/data/CsvEntryLogin.java
 /home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/test/java/br/com/sistemaescolar/tests/AlunoControllerTest.java
 /home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/test/java/br/com/sistemaescolar/helpers/TestUtils.java
 /home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/test/java/br/com/sistemaescolar/helpers/BuildHelpers.java
 /home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/test/java/br/com/sistemaescolar/data/Api2POJO.java
+/home/wbreda/Documentos/ifrs/tcc/sistema-escolar/src/test/java/br/com/sistemaescolar/tests/LoginTest.java

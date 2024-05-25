@@ -1,0 +1,4 @@
+nome,cenario,login,password,status,message
+login-valido,ok,William 123,123,200,Login realizado com sucesso
+login-user-invalido,nok,user_inexistente,123,403,Usuário não localizado
+login-senha-invalida,nok,william,senha_incorreta,403,Senha inserida é inválida

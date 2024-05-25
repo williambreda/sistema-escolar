@@ -140,7 +140,8 @@ public interface BuildHelpers {
         var pojo = apiConfFromPojo.apply(pathFunc.apply(feature, "json"));
 
         switch (feature) {
-            case "cashin-sensedia", "auth-register", "limite-flex", "cashin-if" -> pojo.setBody(updateBody.apply(buildValues.apply(Map.of("login", param1, "password", param2, "role", param3)), pathFunc.apply(feature, "body")));
+            case "auth-register" -> pojo.setBody(updateBody.apply(buildValues.apply(Map.of("login", param1, "password", param2, "role", param3)), pathFunc.apply(feature, "body")));
+            case "auth-login" -> pojo.setBody(updateBody.apply(buildValues.apply(Map.of("login", param1, "password", param2)), pathFunc.apply(feature, "body")));
             case "add-blacklist", "add-greylist" -> pojo.setBody("[" + updateBody.apply(buildValues.apply(Map.of("customerId", param1, "reason", param2)), pathFunc.apply(feature, "body")) + "]");
             case "criar-customer", "adquirencia-cashin" -> pojo.setBody(updateBody.apply(buildValues.apply(Map.of("email", param1)), pathFunc.apply(feature, "body")));
             case "migrar-customer" -> {
