@@ -8,5 +8,5 @@
   "baseUrl": "https://ec2-54-207-195-65.sa-east-1.compute.amazonaws.com",
   "body": "src/test/resources/topaz/auth-register/auth-register-body.json",
   "requestMethod": "POST",
-  "endpoint": "/auth/register"
+  "endpoint": "/auth/login"
 }
