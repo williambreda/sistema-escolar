@@ -28,7 +28,7 @@ public class LoginTest {
 
         var request = asyncRequest.apply(pojo);
 
-        Assertions.assertEquals(request.get().statusCode(), Integer.valueOf(csvEntry.getStatus()));
+        Assertions.assertEquals(Integer.valueOf(csvEntry.getStatus()), request.get().statusCode());
 
     }
 }
