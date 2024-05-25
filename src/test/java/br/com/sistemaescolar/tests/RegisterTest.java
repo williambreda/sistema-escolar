@@ -30,7 +30,7 @@ public class RegisterTest {
 
         var request = asyncRequest.apply(pojo);
 
-        Assertions.assertEquals(request.get().statusCode(), Integer.valueOf(csvEntry.getStatus()));
+        Assertions.assertEquals(Integer.valueOf(csvEntry.getStatus()), request.get().statusCode());
 
         ReportPortal.emitLog("teste", "info", Calendar.getInstance().getTime());
 
