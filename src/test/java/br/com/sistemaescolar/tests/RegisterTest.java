@@ -32,7 +32,5 @@ public class RegisterTest {
 
         Assertions.assertEquals(Integer.valueOf(csvEntry.getStatus()), request.get().statusCode());
 
-        ReportPortal.emitLog("teste", "info", Calendar.getInstance().getTime());
-
     }
 }
