@@ -7,7 +7,7 @@ import io.swagger.v3.oas.annotations.security.SecurityScheme;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@OpenAPIDefinition(info=@Info(title="Sistema Escolar V1.0 - Teste Deploy TCC"))
+@OpenAPIDefinition(info=@Info(title="Sistema Escolar V1.0 - " + "${ENV}"))
 @SpringBootApplication
 @SecurityScheme(
 		name = "Bearer Authentication",
