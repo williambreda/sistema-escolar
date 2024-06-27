@@ -6,7 +6,7 @@ CREATE TABLE nota (
         CONSTRAINT nota_pkey PRIMARY KEY (id),
         CONSTRAINT unique_nome UNIQUE (alunoid, disciplinaid),
         CONSTRAINT nota_alunoid_fkey FOREIGN KEY (alunoid)
-            REFERENCES public.aluno (id) MATCH SIMPLE
+            REFERENCES public.alunos (id) MATCH SIMPLE
             ON UPDATE NO ACTION
             ON DELETE NO ACTION,
         CONSTRAINT nota_disciplinaid_fkey FOREIGN KEY (disciplinaid)
