@@ -17,8 +17,7 @@
 		<java.version>17</java.version>
 		<base.url>http://localhost</base.url>
 		<allure.version>2.15.0</allure.version>
-		<!--suppress UnresolvedMavenProperty -->
-		<sonar.host.url>${{secrets.URL_HOMOLOG}}:9000/</sonar.host.url>
+		<sonar.host.url>http://localhost:9000/</sonar.host.url>
 		<sonar.token>sqa_eeec7b451675c17e577d1c45a18bcabca5b84160</sonar.token>
 	</properties>
 	<dependencies>
