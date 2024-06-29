@@ -58,6 +58,9 @@ jobs:
         run: mvn clean test -Dgroups=integracao -Dbase.url=${{secrets.URL_HOMOLOG}}:8080
         continue-on-error: true
 
+      - name: Maven Clean Sonar
+        run: mvn clean install -DskipTests
+
       - name: Run SonarQube
         run: mvn clean sonar:sonar
 
