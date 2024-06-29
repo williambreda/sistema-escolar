@@ -59,7 +59,7 @@ jobs:
         continue-on-error: true
 
       - name: Run SonarQube
-        run: mvn sonar:sonar -Dsonar.java.binaries=target/classes -Dsonar.host.url=${{secrets.URL_HOMOLOG}}:9000
+        run: mvn sonar:sonar -Dsonar.java.binaries=target/classes -Dsonar.host.url=secrets.URL_HOMOLOG:9000
 
       - name: Get Allure history
         uses: actions/checkout@v2
