@@ -58,6 +58,9 @@ jobs:
         run: mvn clean test -Dgroups=integracao -Dbase.url=${{secrets.URL_HOMOLOG}}:8080
         continue-on-error: true
 
+      - name: Run SonarQube
+        run: mvn sonar:sonar -Dsonar.java.binaries=target/classes -Dsonar.host.url=http://${{secrets.URL_HOMOLOG}}:9000
+
       - name: Get Allure history
         uses: actions/checkout@v2
         if: always()

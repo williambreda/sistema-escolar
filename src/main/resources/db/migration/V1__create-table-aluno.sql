@@ -1,4 +1,4 @@
-CREATE TABLE aluno (
+CREATE TABLE alunos (
     id text COLLATE pg_catalog."default" NOT NULL,
     name text COLLATE pg_catalog."default" NOT NULL,
     CONSTRAINT alunos_pkey PRIMARY KEY (id),
