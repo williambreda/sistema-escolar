@@ -51,13 +51,13 @@ public class NotaController {
         return ResponseEntity.ok(notasList);
     }
 
-    @DeleteMapping("/delete/{id}")
-    public ResponseEntity deleteNota(@PathVariable String id) {
-        if (this.repository.existsById(id)) {
-            this.repository.deleteById(id);
-            return ResponseEntity.ok().build();
-        } else {
-            return ResponseEntity.notFound().build();
-        }
-    }
+//    @DeleteMapping("/delete/{id}")
+//    public ResponseEntity deleteNota(@PathVariable String id) {
+//        if (this.repository.existsById(id)) {
+//            this.repository.deleteById(id);
+//            return ResponseEntity.ok().build();
+//        } else {
+//            return ResponseEntity.notFound().build();
+//        }
+//    }
 }
