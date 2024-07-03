@@ -42,4 +42,22 @@ public class DisciplinaController {
         return ResponseEntity.ok(disciplinaList);
     }
 
+    @PutMapping
+    public ResponseEntity atualizarDisciplina(){
+        List<DisciplinaResponseDTO> disciplinaList = this.repository.findAll().stream().map(DisciplinaResponseDTO::new).toList();
+
+        //logica para atualizar disciplina
+
+        return ResponseEntity.ok(disciplinaList);
+    }
+
+    @DeleteMapping
+    public ResponseEntity deletarDisciplina(){
+        List<DisciplinaResponseDTO> disciplinaList = this.repository.findAll().stream().map(DisciplinaResponseDTO::new).toList();
+
+        //logica para deletar disciplina
+
+        return ResponseEntity.ok(disciplinaList);
+    }
+
 }
