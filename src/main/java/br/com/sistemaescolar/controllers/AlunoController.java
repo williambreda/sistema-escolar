@@ -41,21 +41,6 @@ public class AlunoController {
         return ResponseEntity.ok().build();
     }
 
-    @DeleteMapping
-    public ResponseEntity deleteAluno(@RequestBody @Valid AlunoRequestDTO body){
-
-        //lógica para o delete
-
-        return ResponseEntity.ok().build();
-    }
-
-    @PutMapping
-    public ResponseEntity updateAluno(@RequestBody @Valid AlunoRequestDTO body){
-
-        //lógica para o update
-
-        return ResponseEntity.ok().build();
-    }
 
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Retorna o objeto Aluno", content = @io.swagger.v3.oas.annotations.media.Content(mediaType = "application/json", schema = @io.swagger.v3.oas.annotations.media.Schema(implementation = Aluno.class))),
